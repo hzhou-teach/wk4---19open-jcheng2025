@@ -1,3 +1,10 @@
+/*
+Name: Jonathan C
+Difficulty: 7.5/10
+USACO Test Cases: ********** 10/10
+Time: 1 hr 12 min
+Description: First worked out a long solution before realizing that if a node has an outdegree of 0, it can be reached by every other node if no other node has an outdegree of 0
+*/
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -16,7 +23,7 @@ int main() {
 		int a, b;
 		fin >> a >> b;
 
-		flow[a]++; //keep track of flow 
+		flow[a]++; //keep track of outdegrees 
 	}
 
 	int ans = -1;
