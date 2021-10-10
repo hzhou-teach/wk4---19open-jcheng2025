@@ -1,3 +1,10 @@
+/*
+Name: Jonathan C
+Difficulty: 5/10
+USACO Test Cases: ********** 10/10
+Time: 31 min
+Description: Really hard working out if statements
+*/
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -32,6 +39,7 @@ int main() {
 		}
 	}
 
+	//if bucket and farm forms a straight line and the rock intersects that path, add 2 to the total path to work around it
 	if((bx == lx && rx == bx && ((ry > by && ry < ly) || (ry < by && ry > ly))) || (by == ly && by == ry && ((rx > bx && rx < lx) || (rx < bx && rx > lx)))) {
 		fout << abs(bx-lx) + abs(by-ly)+1;
 	} else {
